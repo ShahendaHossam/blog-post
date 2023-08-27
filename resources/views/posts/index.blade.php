@@ -23,7 +23,7 @@
                         <th scope="row">{{$post->id}}</th>
                         <td>{{$post->title}}</td>
                         <td>{{$post->content}}</td>
-                        <td><a href="">Edit<i class="fa-solid fa-pen-to-square"></i></a></td>
+                        <td><a href="{{ route('posts.edit', $post->id) }}">Edit<i class="fa-solid fa-pen-to-square"></i></a></td>
                     </tr>
                     @endforeach
                 </tbody>
